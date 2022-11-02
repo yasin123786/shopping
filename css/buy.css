@@ -1,0 +1,131 @@
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: black;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+margin-right:1200px;
+margin-left: 00px;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: 222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+.demo{
+  width: 40%;
+  margin-left: 50px;
+}
+.cursor{
+  width: 40%;
+  margin-left: -10%;
+}
+.mySlides{
+  margin-left: 3%;
+}
+.mySlides img{
+  width: 20%;
+}
+.desc{
+  float: right;
+  margin-top: 6%;
+  margin-right: 62%;
+}
+.de{
+  float: right;
+  margin-top: 6%;
+  margin-right: 62%;
+  padding: 1% 3%;
+  background-color: black;
+  color: white;
+}
+.tion{
+  font-size: 40px;
+  text-align: center;
+}
+.as{
+  margin-left: 50%;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.sa{
+  font-size: 22px;
+  margin-left: 20%;
+  text-decoration: none;
+  color: black;
+} 
+.dive{
+  margin-top: 6%;
+}

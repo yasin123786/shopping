@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SHOP</title>
+  <script type="text/javascript">
+    const bar = document.getElementById('bar');
+    const nav = document.getElementById('navbar');
+    if (bar) {
+      bar.addEventListener('click', () => {
+        nav.classList.add('active');
+      })
+    }
+  </script>
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="stylesheet" href="./css/buy.css">
+  <style>
+  #hero{
+    background-image: url(img/download.jpg);
+  }  
+  #hero button {
+  background-image: url();
+  }
+  #apple{
+  background-image: url(img/5.jpeg);
+  }
+  #sm-apple .apple-ox{
+  background-image: url(img/download\ \(1\).jpeg);
+  }
+  #apple3 .apple-ox{
+  background-image: url(img/8.jpeg);
+  }
+  </style>
+</head>
+<body>
+      <section id="header">
+        <a href=""><img style="width:40px;" src="./img/images.png" class="logo" alt=""></a>
+        <div>
+          <ul id="navbar">
+            <li><a href="file:///E:/Rehan%20Bhatti/WEB%20Development/Front-End/My%20CV/Web%20Projects/Shopping/index.html">HOME</a></li>
+            <li><a class="active" href="../shop.html">SHOP</a></li>
+            <li><a href="file:///E:/Rehan%20Bhatti/WEB%20Development/Front-End/My%20CV/Web%20Projects/Shopping/contact.html">CONTACT</a></li>
+            <li><a href="file:///E:/Rehan%20Bhatti/WEB%20Development/Front-End/My%20CV/Web%20Projects/Shopping/about.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <div id="moile">
+          <i id="ar" class="fas fa-outdent"></i>
+        </div>
+      </section>
+      <section>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <img src="./img/download (3).jpeg" style="width:30%;margin-top: 50px;margin-left: 115px;">
+    <div class="bla">
+    <h2 class="sc">Summer Collection New Morden Design T-Shirt</h2>
+    <h2 class="pr">$120.00</h2>
+    <select class="so">
+      <option>Size</option>
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+    <br>
+    <input type="number" class="in">
+    <br>
+    <button type="button" class="atc">Add To Cart</button>
+    <a href="../Buy Thank.html" class="atc">Buy Product</a>
+    <h2>Product Details</h2>
+    <p class="Details">I Do not Know</p>
+    <p class="Details">I Do not Know</p>
+    <p class="Details">I Do not Know</p>
+    <p class="Details">I Do not Know</p>
+  </div>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+      <img src="./img/download (3).jpeg" style="width:30%;margin-top: 50px;margin-left: 115px;">
+      <div class="bla">
+        <h2 class="sc">Summer Collection New Morden Design T-Shirt</h2>
+        <h2 class="pr">$120.00</h2>
+        <select class="so">
+          <option>Size</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <br>
+        <input type="number" class="in">
+        <br>
+        <button type="button" class="atc">Add To Cart</button>
+        <a href="../Buy Thank.html" class="atc">Buy Product</a>
+        <h2>Product Details</h2>
+        <p class="Details">I Do not Know</p>
+        <p class="Details">I Do not Know</p>
+        <p class="Details">I Do not Know</p>
+        <p class="Details">I Do not Know</p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./img/download (3).jpeg" style="width:30%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/download (3).jpeg" style="width:30%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+      </section>
+      <section id="product1" class="section-p1">
+        <h2 style="font-size:40px;">Pants Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-co">
+          <div class="pro">
+             <img style="width: 100%;height: 87%;" src="./img/images (16).jpeg" alt="">
+             <div class="des">
+              <span>Cream</span>
+              <h5>Cartoon Astronaut Pant</h5>
+              <h4>$120.00</h4>
+             </div>
+             <a href="../Pants/buy 1.html"><i class="fal fa-shopping-cart cart">BUY</i></a>
+          </div>
+          <div class="pro">
+             <img src="./img/images (17).jpeg" alt="">
+             <div class="des">
+              <span>Black</span>
+              <h5>Cartoon Astronaut Pant</h5>
+              <h4>$120.00</h4>
+             </div>
+             <a href="../Pants/buy 2.html"><i class="fal fa-shopping-cart cart">BUY</i></a>
+          </div>
+          <div class="pro">
+             <img src="./img/images (18).jpeg" alt="">
+             <div class="des">
+              <span>Geans</span>
+              <h5>Cartoon Astronaut Pant</h5>
+              <h4>$120.00</h4>
+             </div>
+             <a href="../Pants/buy 3.html"><i class="fal fa-shopping-cart cart">BUY</i></a>
+          </div>
+          <div class="pro">
+             <img style="width: 100%;height: 85%;" src="./img/images (19).jpeg" alt="">
+             <div class="des">
+              <span>Black</span>
+              <h5>Cartoon Astronaut Pant</h5>
+              <h4>$120.00</h4>
+             </div>
+             <a href="../Pants/buy 4.html"><i class="fal fa-shopping-cart cart">BUY</i></a>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section id="letter" class="section-p1 section-m1">
+        <div class="text">
+          <h4 style="font-size:20px;">Sign Up For Newsletters</h4>
+          <p>Get E-Mail update about our latest shop and <span>Sepecial Offers.</span></p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Your email address">
+          <button class="normal">Sign Up</button>
+        </div>
+      </section>
+      <footer class="section-p1">
+        <div class="col">
+          <h4>Contact</h4>
+          <br>
+          <p><strong>Address: </strong>8-B Waseem Block Hassan Town Multan Road Lahore</p>
+          <br>
+          <p><strong>Phone: </strong>+92 3314943086</p>
+          <br>
+          <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+          <br>
+          <div class="follow">
+            <h4></h4>
+            <div class="ico">
+              <i class="asdadasd"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="">About Us</a>
+          <a href="">Delivery Information</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="">About Us</a>
+          <a href="">Delivery Information</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+          <a href="">Contact Us</a>
+        </div>
+        </div>
+      </footer>      
+</body>
+</html>
